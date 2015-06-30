@@ -10,5 +10,6 @@ theme: readthedocs
 strict: true
 markdown_extensions:
     - "markdown_checklist.extension"
+    - attr_list
     - toc:
         baselevel: 3
