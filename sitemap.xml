@@ -9,4 +9,20 @@
     </url>
     
 
+    
+    <url>
+     <loc>http://www.museumprovenance.org/standard/</loc>
+     <lastmod>2015-06-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>http://www.museumprovenance.org/example-records/</loc>
+     <lastmod>2015-06-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
 </urlset>
