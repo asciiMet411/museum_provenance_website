@@ -8,6 +8,8 @@ repo_url: https://github.com/cmoa/museum_provenance
 site_favicon: favicon.ico
 theme: readthedocs
 strict: true
+
+google_analytics: ["UA-1213892-9", 'www.museumprovenance.org']
 markdown_extensions:
     - "markdown_checklist.extension"
     - attr_list
