@@ -15,3 +15,8 @@ markdown_extensions:
     - attr_list
     - toc:
         baselevel: 3
+
+pages:
+    - "Art Tracks": 'index.md'
+    - "CMOA Provenance Standard": 'standard.md'
+    - "Example Records": "example-records.md"
