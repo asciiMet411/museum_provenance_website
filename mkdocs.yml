@@ -1,2 +1,14 @@
-site_name: Museum Provenance
+site_name: Art Tracks
+site_description: ""
+site_author: David Newbury
+copyright: "All material on this site is released under the <a href='https://creativecommons.org/licenses/by/3.0/us/'>CC BY 3.0 US</a> license."
+
+site_url: http://www.museumprovenance.org
+repo_url: https://github.com/cmoa/museum_provenance
+site_favicon: favicon.ico
 theme: readthedocs
+strict: true
+markdown_extensions:
+    - "markdown_checklist.extension"
+    - toc:
+        baselevel: 3
