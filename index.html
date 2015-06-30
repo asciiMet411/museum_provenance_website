@@ -5,10 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Museum Provenance</title>
+  <title>Art Tracks</title>
   
 
-  <link rel="shortcut icon" href="./img/favicon.ico">
+  <link rel="shortcut icon" href="favicon.ico">
+  
 
   
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
@@ -16,6 +17,7 @@
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
   <link rel="stylesheet" href="./css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="./css/highlight.css">
+  <link href="./readthedocs_changes.css" rel="stylesheet">
 
   
   <script>
@@ -38,7 +40,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="." class="icon icon-home"> Museum Provenance</a>
+        <a href="." class="icon icon-home"> Art Tracks</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -55,11 +57,11 @@
         
             <ul>
             
-                <li class="toctree-l3"><a href="#welcome-to-mkdocs">Welcome to MkDocs</a></li>
+                <li class="toctree-l3"><a href="#overview-of-phase-one">Overview of Phase One</a></li>
                 
-                    <li><a class="toctree-l4" href="#commands">Commands</a></li>
+                    <li><a class="toctree-l4" href="#publications">Publications</a></li>
                 
-                    <li><a class="toctree-l4" href="#project-layout">Project layout</a></li>
+                    <li><a class="toctree-l4" href="#software-tools">Software Tools</a></li>
                 
             
             </ul>
@@ -77,7 +79,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href=".">Museum Provenance</a>
+        <a href=".">Art Tracks</a>
       </nav>
 
       
@@ -92,6 +94,10 @@
     <li>Home</li>
     <li class="wy-breadcrumbs-aside">
       
+        
+          <a href="https://github.com/cmoa/museum_provenance" class="icon icon-github"> Edit on GitHub</a>
+        
+      
     </li>
   </ul>
   <hr/>
@@ -99,21 +105,22 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="http://mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs help</code> - Print this help message.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+                <p>Art Tracks is an initiative of the Carnegie Museum of Art that aims to turn provenance in to structured data by building a suite of open source software tools.  These tools transform traditional written provenenance records into searchable data, with an emphasis on existing data standards and a strong focus on building tools that are useful (and usable) across multiple institutions.</p>
+<p>Once we have converted our provenance information into structured data, we can ask complex questions like “Which works in our collection were in the same city in the same year?” or “Which artworks in our collection were owned by an artist whose work is also in our collection?” By doing more with the data we already have, we can discover gaps in knowledge, shape collections policy, and better understand the ecosystem of the collection and the institution. </p>
+<hr />
+<h4 id="overview-of-phase-one">Overview of Phase One</h4>
+<p>Art Tracks: Phase One as a project is made up of several integrated tools and projects.  There are several core technologies involved:</p>
+<h6 id="publications">Publications</h6>
+<p>The <strong>CMOA Provenance Standard</strong> is a strict superset of the AAM provenance standard, designed to resolve ambiguities and provide guidance and machine-readability.</p>
+<p><strong>Museums &amp; the Web Paper</strong>, to be presented at Museums &amp; the Web in April 2015.</p>
+<h6 id="software-tools">Software Tools</h6>
+<p>The <a href="https://github.com/cmoa/museum_provenance"><strong>museum_provenance</strong></a> library is the core technology developed for this project.  It takes provenance records and converts them into structured, well-formatted data.</p>
+<p>The <a href="https://github.com/cmoa/elysa"><strong>Elysa</strong></a> tool is a user interface designed for museum professionals.  It assists with verifying, cleaning, and modifying provenance records. </p>
+<p>The <strong><code>art_tracks</code></strong> library is an API layer developed in ruby that sits on top of the KE-Emu CMS at CMOA and converts into JSON and RDF, for use, parsing, and distribution.</p>
+<p>The <strong>Gallery Interactive</strong> is a tool designed to take structured provenance data and present it to the public in interesting and visual ways.</p>
+<p>A <strong>search layer</strong> has been created to allow for indexing and searching across the museum data.  This tool is built with <a href="http://www.elasticsearch.org">ElasticSearch</a> and can be extended both for complete collection search, as well as provenance research.</p>
+<hr />
+<p class="funding"><em>Initial funding for this project was provided in part by a generous grant by the <a href="http://www.imls.gov">Institute of Museum and Library Services</a>.</em></p>
               
             </div>
           </div>
@@ -141,6 +148,8 @@ docs/
 <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
+          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
       
       
     </span>
@@ -151,5 +160,5 @@ docs/
 
 <!--
 MkDocs version : 0.13.3
-Build Date UTC : 2015-06-30 17:12:36.592432
+Build Date UTC : 2015-06-30 18:14:55.873887
 -->

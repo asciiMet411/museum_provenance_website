@@ -2,23 +2,8 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Welcome to MkDocs\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "text": "Art Tracks is an initiative of the Carnegie Museum of Art that aims to turn provenance in to structured data by building a suite of open source software tools.  These tools transform traditional written provenenance records into searchable data, with an emphasis on existing data standards and a strong focus on building tools that are useful (and usable) across multiple institutions.\n\n\nOnce we have converted our provenance information into structured data, we can ask complex questions like \u201cWhich works in our collection were in the same city in the same year?\u201d or \u201cWhich artworks in our collection were owned by an artist whose work is also in our collection?\u201d By doing more with the data we already have, we can discover gaps in knowledge, shape collections policy, and better understand the ecosystem of the collection and the institution. \n\n\n\n\nOverview of Phase One\n\n\nArt Tracks: Phase One as a project is made up of several integrated tools and projects.  There are several core technologies involved:\n\n\nPublications\n\n\nThe \nCMOA Provenance Standard\n is a strict superset of the AAM provenance standard, designed to resolve ambiguities and provide guidance and machine-readability.\n\n\nMuseums \n the Web Paper\n, to be presented at Museums \n the Web in April 2015.\n\n\nSoftware Tools\n\n\nThe \nmuseum_provenance\n library is the core technology developed for this project.  It takes provenance records and converts them into structured, well-formatted data.\n\n\nThe \nElysa\n tool is a user interface designed for museum professionals.  It assists with verifying, cleaning, and modifying provenance records. \n\n\nThe \nart_tracks\n library is an API layer developed in ruby that sits on top of the KE-Emu CMS at CMOA and converts into JSON and RDF, for use, parsing, and distribution.\n\n\nThe \nGallery Interactive\n is a tool designed to take structured provenance data and present it to the public in interesting and visual ways.\n\n\nA \nsearch layer\n has been created to allow for indexing and searching across the museum data.  This tool is built with \nElasticSearch\n and can be extended both for complete collection search, as well as provenance research.\n\n\n\n\nInitial funding for this project was provided in part by a generous grant by the \nInstitute of Museum and Library Services\n.", 
             "title": "Home"
-        }, 
-        {
-            "location": "/#welcome-to-mkdocs", 
-            "text": "For full documentation visit  mkdocs.org .", 
-            "title": "Welcome to MkDocs"
-        }, 
-        {
-            "location": "/#commands", 
-            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
-            "title": "Commands"
-        }, 
-        {
-            "location": "/#project-layout", 
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
-            "title": "Project layout"
         }
     ]
 }
